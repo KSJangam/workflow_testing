@@ -1,44 +1,27 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 import pandas
+import argparse
 
+parser=argparse.ArgumentParser(description="io files")
+parser.add_argument("inputfile", type=argparse.FileType('r'), help="input file")
+parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
+args=parser.parse_args()
+df1=pandas.read_csv(args.inputfile)
 
-# In[3]:
-
-
-loc = "AIMLSummary_06082022_ForKunal_CSV2.csv"
-
-
-# In[9]:
-
-
-df1=pandas.read_csv(loc)
-
-
-# In[10]:
 
 
 nodes = dict() #create dictionary to store the ID of classification nodes
 i = 1 #keep a counter to assign node ID
 
 
-# In[11]:
-
 
 cols=[list() for num in range(len(df1.columns))]
 
 
-# In[12]:
-
-
 col_names=df1.columns
-
-
-# In[13]:
 
 
 df1 = df1.reset_index()  # make sure indexes pair with number of rows
@@ -71,28 +54,15 @@ for index, row in df1.iterrows():
                 cols[2].append(row[col_names[num]])
 
 
-# In[17]:
-
-
 d = {'ParentID':cols[0], 'ChildID':cols[1], 'Name':cols[2]}
 df = pandas.DataFrame(data = d)
 df.head(15)
 
 
-# In[19]:
 
+df.to_csv(args.outputfile, index=False)
 
-df.to_csv("AIMLSummary_converted.csv", index=False)
-
-
-# In[18]:
 
 
 df.tail(15)
-
-
-# In[ ]:
-
-
-
 
