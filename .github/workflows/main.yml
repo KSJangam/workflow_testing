@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --global user.name "KSJangam"
           git config --global user.email "kjangam8@gmail.com"
-          git add -A
+          git add output/out.csv
           git commit -m "output file created"
           git push
     # Steps represent a sequence of tasks that will be executed as part of the job
