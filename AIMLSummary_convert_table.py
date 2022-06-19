@@ -12,7 +12,7 @@ parser.add_argument("inputfilepath",  help="path to input file")
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
 x=args.inputfilepath+"/input/"+os.listdir(args.inputfilepath+"/input")[0]
-df1=pandas.read_csv(x, encoding = "ISO-8859-1", engine='c', keep_default_na=False)
+df1=pandas.read_csv(x, encoding = "utf-8", engine='python', keep_default_na=False)
 
 df1.to_csv('output/a.csv', encoding='utf-8', index=False)
 
