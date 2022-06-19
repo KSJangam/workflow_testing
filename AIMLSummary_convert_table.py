@@ -11,7 +11,7 @@ parser=argparse.ArgumentParser(description="io files")
 parser.add_argument("inputfilepath",  help="path to input file")
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
-x="input/"+os.listdir(args.inputfilepath+"/input")[0]
+x=args.inputfilepath+"input/"+os.listdir(args.inputfilepath+"/input")[0]
 df1=pandas.read_csv(x)
 
 
