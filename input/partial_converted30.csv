@@ -19,3 +19,13 @@ DL with GPU,AI/ML libraries,PyTorch
 DL with GPU,AI/ML libraries,Tensorflow
 DL with GPU,AI/ML libraries,Theano
 DL with GPU,AI/ML libraries,Nvidia Rapids
+DL Wrapper Libraries,"AI/ML libraries, which can work seamless with Theano & TensroFlow",Keras
+DL Wrapper Libraries,Modeling tool,Knime Analytics Platform
+DL Wrapper Libraries,,Lasagne
+DL Wrapper Libraries,,TensorLayer
+DL Wrapper Libraries,,TFLearn
+General Purpose,Modeling Tool,Matlab basic
+General Purpose,Language,Python Language
+General Purpose,,RapidMinder
+General Purpose,AI/ML libraries,Scikit-Learn
+General Purpose,,Shogun
