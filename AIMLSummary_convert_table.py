@@ -14,7 +14,7 @@ args=parser.parse_args()
 x="input/"+os.listdir("input")[0]
 
 
-df1=pandas.read_csv(x, encoding='windows-1252', engine='python', keep_default_na=False)
+df1=pandas.read_csv(x, encoding = "ISO-8859-1", engine='c', keep_default_na=False)
 
 nodes = dict() #create dictionary to store the ID of classification nodes
 i = 1 #keep a counter to assign node ID
