@@ -4,15 +4,15 @@
 
 import pandas
 import argparse
-import os 
+#import os 
 parser=argparse.ArgumentParser(description="io files")
 
-#parser.add_argument("inputfile", type=argparse.FileType('r'), help="input file")
+parser.add_argument("inputfile", type=argparse.FileType('r'), help="input file")
 
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
-x="input/"+os.listdir("input")[0]
-df1=pandas.read_csv(x, keep_default_na=False)
+#x="input/"+os.listdir("input")[0]
+df1=pandas.read_csv(args.inputfile, keep_default_na=False)
 
 nodes = dict() #create dictionary to store the ID of classification nodes
 i = 1 #keep a counter to assign node ID

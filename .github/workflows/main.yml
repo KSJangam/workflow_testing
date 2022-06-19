@@ -24,11 +24,11 @@ jobs:
           python-version: 3.7 #install the python needed
       - name: Install Python dependencies
         run: python -m pip install --upgrade pip pandas
-      - name: Install OS
-        run: python -m pip install --upgrade pip os
+      - name: get input file name
+        run: python get_input_filename.py
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python AIMLSummary_convert_table.py output/out.csv
+          python AIMLSummary_convert_table.py ${{inputfile}} output/out.csv
       - name: Commit and Push
         run: |
           git config --global user.name "KSJangam"
