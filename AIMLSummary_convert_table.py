@@ -12,7 +12,7 @@ parser.add_argument("inputfilepath",  help="path to input file")
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
 x=args.inputfilepath+"/input/"+os.listdir(args.inputfilepath+"/input")[0]
-df1=pandas.read_csv(x, encoding = "ISO-8859-1", engine='c')
+df1=pandas.read_csv(x, encoding = "ISO-8859-1", engine='python', keep_default_na=False)
 
 
 
@@ -29,16 +29,16 @@ col_names=df1.columns
 
 df1 = df1.reset_index()  # make sure indexes pair with number of rows
 for index, row in df1.iterrows():
-    if row[col_names[0]]+str(0) not in nodes.keys() and not pandas.isna(row[col_names[0]]):
+    if row[col_names[0]]+str(0) not in nodes.keys() and row[col_names[0]]!="":
         nodes[row[col_names[0]]+str(0)]=[i, [0]]
         cols[0].append(0)
         cols[1].append(i)
         cols[2].append(row[col_names[0]])
         i=i+1
     for num in range(1, len(col_names)):
-        if not pandas.isna(row[col_names[num]]): 
+        if row[col_names[num]]!="": 
             backstep=1
-            while num-backstep>=0 and pandas.isna(row[col_names[num-backstep]]):
+            while num-backstep>=0 and row[col_names[num-backstep]]=="":
                 backstep=backstep+1
             if num-backstep<0:
                 p=0
