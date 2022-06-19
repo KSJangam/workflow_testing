@@ -19,3 +19,16 @@ ParentID,ChildID,Name
 17,18,LSTM
 14,19,Modeling Tool
 19,20,Matlab Deep Learning Package
+14,21,RNN - Deep Learning
+21,22,Recurrent NN
+0,23,DL with GPU
+23,24,AI/ML libraries
+24,25,Caffe
+24,26,Chainer
+24,27,MatConvNet
+24,28,MXNet
+24,29,PaddlePaddle
+24,30,PyTorch
+24,31,Tensorflow
+24,32,Theano
+24,33,Nvidia Rapids
