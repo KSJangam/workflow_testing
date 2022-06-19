@@ -22,6 +22,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7 #install the python needed
+      - name: import pandas
+        run: python -c 'import pandas'
       - name: execute py script # run the run.py to get the latest data
         run: |
           python AIMLSummary_convert_table.py input/partial_converted20.csv output/out.csv
