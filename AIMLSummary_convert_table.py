@@ -61,7 +61,7 @@ df.head(15)
 
 
 
-df.to_csv(args.outputfile, index=False)
+df.to_csv(args.outputfile, encoding= 'unicode_escape', index=False)
 
 
 
