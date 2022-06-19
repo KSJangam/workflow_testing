@@ -12,7 +12,6 @@ parser.add_argument("inputfile", type=argparse.FileType('r'), help="input file")
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
 #x="input/"+os.listdir("input")[0]
-print(args.inputfile)
 df1=pandas.read_csv(args.inputfile, encoding='UTF-8', keep_default_na=False)
 
 nodes = dict() #create dictionary to store the ID of classification nodes
@@ -59,9 +58,10 @@ for index, row in df1.iterrows():
 d = {'ParentID':cols[0], 'ChildID':cols[1], 'Name':cols[2]}
 df = pandas.DataFrame(data = d)
 
+print(df.head(10))
+print(args.outputfile)
 
-
-df.to_csv(args.outputfile, encoding = "utf-8",index=False)
+df.to_csv(args.outputfile, index=False)
 
 
 
