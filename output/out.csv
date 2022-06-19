@@ -1,1 +1,34 @@
 ParentID,ChildID,Name
+0,1,Analysis & Visulization
+1,2,Analysis & Visulization
+2,3,Power BI
+2,4,Tableau
+2,5,SAS Visula
+0,6,Cloud AI/ML
+6,7,Cloud based env with AI/ML libraires
+7,8,Azure Cognitive Services
+7,9,GCP AutomML /Vertex AI
+6,10,Oracle AI Cloud
+0,11,Computer Vision Library
+11,12,Computer Vision Library
+12,13,OpenCV
+0,14,Deep Learning
+14,15,CNN - Deep Learning
+15,16,Convolutional NN
+14,17,LSTM - Deep Learing
+17,18,LSTM
+14,19,Modeling Tool
+19,20,Matlab Deep Learning Package
+14,21,RNN - Deep Learning
+21,22,Recurrent NN
+0,23,DL with GPU
+23,24,AI/ML libraries
+24,25,Caffe
+24,26,Chainer
+24,27,MatConvNet
+24,28,MXNet
+24,29,PaddlePaddle
+24,30,PyTorch
+24,31,Tensorflow
+24,32,Theano
+24,33,Nvidia Rapids
