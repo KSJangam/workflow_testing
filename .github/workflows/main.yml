@@ -16,13 +16,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v2
-      - uses: jannekem/run-python-script-action@v1
-        python-version: 3.7 #install the python needed
-          - name: execute py script # run the run.py to get the latest data
-            run: |
-              python3 AIMLSummary_convert_table.py input/partial_converted20.csv output/out.csv
+      - name: checkout repo content
+          uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.7 #install the python needed
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python run.pyvert_table.py input/partial_converted20.csv output/out.csv
 
     # Steps represent a sequence of tasks that will be executed as part of the job
   
