@@ -19,7 +19,7 @@ i = 1 #keep a counter to assign node ID
 
 
 
-cols=[list() for num in range(len(df1.columns))]
+cols=[list() for num in range(3)]
 
 
 col_names=df1.columns
