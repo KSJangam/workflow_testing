@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-          uses: actions/checkout@v2 # checkout the repository content to github runner.
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
       - name: setup python
-          uses: actions/setup-python@v2
-          with:
-            python-version: 3.7 #install the python needed
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7 #install the python needed
       - name: execute py script # run the run.py to get the latest data
         run: |
           python run.pyvert_table.py input/partial_converted20.csv output/out.csv
