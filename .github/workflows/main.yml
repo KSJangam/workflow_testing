@@ -27,6 +27,16 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           python AIMLSummary_convert_table.py input/partial_converted20.csv output/out.csv
-
+        uses: DamianReeves/write-file-action
+        with:
+        path: ${{ env.home}}/.bashrc
+        contents: |
+          echo "Hello World!"
+        write-mode: append
+      - name: Commit and Push
+        run: |
+          git add -A
+          git commit -m "output file created"
+          git push
     # Steps represent a sequence of tasks that will be executed as part of the job
   
