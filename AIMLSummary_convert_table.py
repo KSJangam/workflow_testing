@@ -8,7 +8,7 @@ import os
 
 parser=argparse.ArgumentParser(description="io files")
 
-parser.add_argument("inputfilepath",  help="path to input file")
+parser.add_argument("inputfilepath",  type=argparse.FileType('r'), help="path to input file")
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
 x=args.inputfilepath+"/input/"+os.listdir(args.inputfilepath+"/input")[0]
