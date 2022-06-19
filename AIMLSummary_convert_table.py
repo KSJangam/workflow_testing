@@ -16,7 +16,7 @@ print("hi")
 print(args.inputfile)
 print("bye")
 df1=pandas.read_csv(args.inputfile, encoding='UTF-8', keep_default_na=False)
-print(df1.head(10))
+
 nodes = dict() #create dictionary to store the ID of classification nodes
 i = 1 #keep a counter to assign node ID
 
@@ -60,7 +60,7 @@ for index, row in df1.iterrows():
 
 d = {'ParentID':cols[0], 'ChildID':cols[1], 'Name':cols[2]}
 df = pandas.DataFrame(data = d)
-df.head(15)
+print(df.head(15))
 
 
 
