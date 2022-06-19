@@ -8,12 +8,11 @@ import os
 
 parser=argparse.ArgumentParser(description="io files")
 
-parser.add_argument("inputfilepath", help="path to input file")
+
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
 args=parser.parse_args()
-x=args.inputfilepath+"/input/"+os.listdir(args.inputfilepath+"/input")[0]
-print(repr(open(x, 'rb').read(200)))
-df1=pandas.read_csv(x, encoding = "utf-8", engine='python', keep_default_na=False)
+x="input/"+os.listdir("input")[0]
+df1=pandas.read_csv(x, keep_default_na=False)
 
 nodes = dict() #create dictionary to store the ID of classification nodes
 i = 1 #keep a counter to assign node ID
