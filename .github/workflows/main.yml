@@ -29,6 +29,8 @@ jobs:
           python AIMLSummary_convert_table.py input/partial_converted20.csv output/out.csv
       - name: Commit and Push
         run: |
+          git config --global user.name "KSJangam"
+          git config --global user.email "kjangam8@gmail.com"
           git add -A
           git commit -m "output file created"
           git push
