@@ -32,3 +32,20 @@ ParentID,ChildID,Name
 24,31,Tensorflow
 24,32,Theano
 24,33,Nvidia Rapids
+0,34,DL Wrapper Libraries
+34,35,"AI/ML libraries, which can work seamless with Theano & TensroFlow"
+35,36,Keras
+34,37,Modeling tool
+37,38,Knime Analytics Platform
+34,39,Lasagne
+34,40,TensorLayer
+34,41,TFLearn
+0,42,General Purpose
+42,19,Modeling Tool
+19,43,Matlab basic
+42,44,Language
+44,45,Python Language
+42,46,RapidMinder
+42,24,AI/ML libraries
+24,47,Scikit-Learn
+42,48,Shogun
