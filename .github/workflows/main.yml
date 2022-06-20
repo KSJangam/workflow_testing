@@ -32,6 +32,7 @@ jobs:
         run: |
           echo '${{ steps.file_changes.outputs.files}}'
           echo '${{ steps.file_changes.outputs.files_modified}}'
+          echo '${{ steps.file_changes.outputs.files_added}}'
           echo '${{ steps.file_changes.outputs.files_added[0]}}'
           echo '${{ steps.file_changes.outputs.files_removed}}'
           python AIMLSummary_convert_table.py ${{ steps.file_changes.outputs.files_added[0]}} output/out.csv
