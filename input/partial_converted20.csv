@@ -1,0 +1,31 @@
+Classification,Type,Tool Name
+Analysis & Visulization,Analysis & Visulization,Power BI
+Analysis & Visulization,Analysis & Visulization,Tableau
+Analysis & Visulization,Analysis & Visulization,SAS Visula
+Cloud AI/ML,Cloud based env with AI/ML libraires,Azure Cognitive Services
+Cloud AI/ML,Cloud based env with AI/ML libraires,GCP AutomML /Vertex AI
+Cloud AI/ML,,Oracle AI Cloud
+Computer Vision Library,Computer Vision Library,OpenCV
+Deep Learning,CNN - Deep Learning,Convolutional NN
+Deep Learning,LSTM - Deep Learing,LSTM
+Deep Learning,Modeling Tool,Matlab Deep Learning Package
+Deep Learning,RNN - Deep Learning,Recurrent NN
+DL with GPU,AI/ML libraries,Caffe
+DL with GPU,AI/ML libraries,Chainer
+DL with GPU,AI/ML libraries,MatConvNet
+DL with GPU,AI/ML libraries,MXNet
+DL with GPU,AI/ML libraries,PaddlePaddle
+DL with GPU,AI/ML libraries,PyTorch
+DL with GPU,AI/ML libraries,Tensorflow
+DL with GPU,AI/ML libraries,Theano
+DL with GPU,AI/ML libraries,Nvidia Rapids
+DL Wrapper Libraries,"AI/ML libraries, which can work seamless with Theano & TensroFlow",Keras
+DL Wrapper Libraries,Modeling tool,Knime Analytics Platform
+DL Wrapper Libraries,,Lasagne
+DL Wrapper Libraries,,TensorLayer
+DL Wrapper Libraries,,TFLearn
+General Purpose,Modeling Tool,Matlab basic
+General Purpose,Language,Python Language
+General Purpose,,RapidMinder
+General Purpose,AI/ML libraries,Scikit-Learn
+General Purpose,,Shogun
