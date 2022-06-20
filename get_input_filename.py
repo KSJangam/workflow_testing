@@ -13,4 +13,4 @@ print('bye')
 env_file = os.getenv('GITHUB_ENV')
 
 with open(env_file, "a") as myfile:
-    myfile.write(args.newfile[1:-1].split(',')[-1][1:-1])
+    myfile.write("inputfile="+args.newfile[1:-1].split(',')[-1][1:-1])
