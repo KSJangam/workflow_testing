@@ -24,20 +24,13 @@ jobs:
           python-version: 3.7 #install the python needed
       - name: Install Python dependencies
         run: python -m pip install --upgrade pip pandas
-      #- name: get input file name
-        #run: python get_input_filename.py
+      
       - id: file_changes
         uses: trilom/file-changes-action@v1.2.4
+      - name: get input file name
+        run: python get_input_filename.py ${{ steps.file_changes.outputs.files_added}}
       - name: execute py script # run the run.py to get the latest data
-        run: |
-          echo '${{ steps.file_changes.outputs.files}}'
-          echo '${{ steps.file_changes.outputs.files_modified}}'
-          echo '${{ steps.file_changes.outputs.files_added}}'
-          echo '${{ steps.file_changes.outputs.files_added[0]}}'
-          echo '${{ steps.file_changes.outputs.files_added}}[0]'
-          echo '${{ steps.file_changes.outputs.files_removed}}'
-          python AIMLSummary_convert_table.py ${{ steps.file_changes.outputs.files_added[0]}} output/out.csv
-          #python AIMLSummary_convert_table.py ${{env.inputfile}} output/out.csv
+          python AIMLSummary_convert_table.py ${{env.inputfile}} output/out.csv
       - name: Commit and Push
         run: |
           git config --global user.name "KSJangam"
