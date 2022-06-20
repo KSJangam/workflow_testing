@@ -30,7 +30,7 @@ jobs:
         uses: trilom/file-changes-action@v1.2.4
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python AIMLSummary_convert_table.py ${{ steps.file_changes.outputs.files_added}} output/out.csv
+          python AIMLSummary_convert_table.py ${{ steps.file_changes.outputs.files_added}[0]} output/out.csv
           #python AIMLSummary_convert_table.py ${{env.inputfile}} output/out.csv
       - name: Commit and Push
         run: |
