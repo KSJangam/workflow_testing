@@ -87,3 +87,7 @@ ParentID,ChildID,Name
 81,82,Muti-Layer Perceptron
 78,83,Simple NN
 83,84,Perceltron
+81,85,Radial Based Networks
+0,86,OCR
+86,87,OCR
+87,88,Tesseract
