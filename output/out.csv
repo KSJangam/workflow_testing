@@ -91,3 +91,9 @@ ParentID,ChildID,Name
 0,86,OCR
 86,87,OCR
 87,88,Tesseract
+0,89,Others
+89,90,Prem/cloud based env with AI/ML libraries
+90,91,Nvidia GPU servers  HW + SW
+0,92,Speech to Tex library
+92,93,Speech to Tex library
+93,94,AST
