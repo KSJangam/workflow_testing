@@ -67,3 +67,23 @@ ParentID,ChildID,Name
 0,63,ML/DL with MapReduce
 63,64,FlinkML
 63,65,Oryx2 ML
+63,66,AI/ML libraries. Available in many language
+66,67,Spark MLLib (Scala)
+0,68,Modeling
+68,19,Modeling Tool
+19,69,Alteryx
+19,70,Mathwork Simulink
+0,71,Natural Language Processing (NLP) 
+71,72,Makes the process of identifying the underlying topic of a piece of text (known as topic modeling) substantially easier.
+72,73,Gensim
+71,74,Natural Language Processing (NLP) libraries
+74,75,NLTK
+74,76,OpenAI GPT -3
+74,77,SpaCy
+0,78,General Neural Network
+78,79,One hidden layer
+79,80,Feed Forward Networks
+78,81,Mutiple Layers
+81,82,Muti-Layer Perceptron
+78,83,Simple NN
+83,84,Perceltron
