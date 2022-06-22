@@ -49,3 +49,21 @@ ParentID,ChildID,Name
 42,24,AI/ML libraries
 24,47,Scikit-Learn
 42,48,Shogun
+42,49,Data Mining tool
+49,50,Weka
+0,51,Graph DB
+51,52,Graph database for recommendation system and fraud detection
+52,53,Neo4j
+0,54,Interactive platforms
+54,55,Grafana
+54,56,Web-based interactive dev env.
+56,57,Jupyter Notebook
+54,58,Kibana
+54,59,Orange
+54,60,Zeppelin
+0,61,MD/DL with MapReduce
+61,19,Modeling Tool
+19,62,H2O.ai/ Deep Water
+0,63,ML/DL with MapReduce
+63,64,FlinkML
+63,65,Oryx2 ML
