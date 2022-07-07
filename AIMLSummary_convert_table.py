@@ -5,22 +5,20 @@
 import pandas
 import argparse
 from tinydb import TinyDB, Query
-import os
 parser=argparse.ArgumentParser(description="io files")
 
 parser.add_argument("inputfile", type=argparse.FileType('r'), help="input file")
 
 parser.add_argument("outputfile", type=argparse.FileType('w'), help="output file")
+
 args=parser.parse_args()
 df1=pandas.read_csv(args.inputfile, encoding='UTF-8', keep_default_na=False)
 
-if os.path.exists(args.outputfile):
-    os.remove(args.outputfile)
 tdb=TinyDB(args.outputfile)
 q=Query()
+tdb.remove(q.name=='Classification')
 
 col_names=df1.columns
-
 
 tdb.insert({'name':'Classification', 'parent':"null", 'children':[]})
 
@@ -33,7 +31,6 @@ def parse_row(row, index, parent, l):
         if len(item)==0:
             children=[parse_row(row, index+1, row[col_names[index]], [])]
             if children == [""]:
-                print("here")
                 return {'name':row[col_names[index]], 'parent':parent}
             else:
                 return {'name':row[col_names[index]], 'parent':parent, 'children':children}
