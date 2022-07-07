@@ -32,7 +32,7 @@ jobs:
           python get_input_filename.py '${{ steps.file_changes.outputs.files_added}}'
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python AIMLSummary_convert_table.py ${{env.inputfile}} output/out.csv
+          python AIMLSummary_convert_table.py ${{env.inputfile}} output/out.json
       - name: Commit and Push
         run: |
           git config --global user.name "KSJangam"
