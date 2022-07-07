@@ -1,0 +1,11 @@
+Classification,Type,Tool Name,Level4,Level 5
+Analysis & Visulization,Analysis & Visulization,Power BI,,
+Analysis & Visulization,Analysis & Visulization,Tableau,,
+Analysis & Visulization,Analysis & Visulization,SAS Visula,,
+Cloud AI/ML,Cloud based env with AI/ML libraires,Azure Cognitive Services,,
+Cloud AI/ML,Cloud based env with AI/ML libraires,GCP AutomML /Vertex AI,,
+Cloud AI/ML,,Oracle AI Cloud,,
+Computer Vision Library,Computer Vision Library,OpenCV,,
+Deep Learning,CNN - Deep Learning,Convolutional NN,,
+Deep Learning,LSTM - Deep Learing,LSTM,,
+Deep Learning,Modeling Tool,Matlab Deep Learning Package,,
